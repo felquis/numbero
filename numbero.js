@@ -24,8 +24,8 @@
             '3' : 'treze',
             '4' : 'quatorze',
             '5' : 'quinze',
-            '6' : 'dezeseis',
-            '7' : 'sezessete',
+            '6' : 'dezesseis',
+            '7' : 'dezessete',
             '8' : 'dezoito',
             '9' : 'dezenove'
             },
@@ -45,10 +45,10 @@
         '3' : 'trezentos',
         '4' : 'quatrocentos',
         '5' : 'quinhentos',
-        '6' : 'seis centos',
-        '7' : 'sete centos',
-        '8' : 'oito centos',
-        '9' : 'nove centos'
+        '6' : 'seiscentos',
+        '7' : 'setecentos',
+        '8' : 'oitocentos',
+        '9' : 'novecentos'
         },
     // 4
     '3' : {
