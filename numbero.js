@@ -91,11 +91,23 @@
 
             var extenso = Numeros[i][numeroArray[i]];
 
-            // Números de dez a dezenove
-            if (i == 0 && numeroArray[i+1] == '1') {
-                if (numeroArray[i+1] == '1') {
-                    extenso = Numeros[(i+1)]['1'][numeroArray[i]];
-                    i++;
+            /*
+                Dezenas
+            */
+            if (i == 0) {
+                var intN = parseFloat(numeroArray[i+1]);
+
+                if (intN > 0 && intN <= 9) {
+                    // De dez a dezenove
+                    if (intN == 1) {
+                        extenso = Numeros[(i+1)]['1'][numeroArray[i]];
+                        i++;
+
+                    // De vinte, trinta, quarenta... até noventa
+                    } else if (numeroArray[i] == '0') {
+                        extenso = Numeros[(i+1)][numeroArray[i+1]];
+                        i++;
+                    }
                 }
             }
 
