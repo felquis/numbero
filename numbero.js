@@ -20,6 +20,7 @@
     // 2
     '1' : {
         '1' : {
+            '0' : 'dez',
             '1' : 'onze',
             '2' : 'doze',
             '3' : 'treze',
@@ -87,7 +88,19 @@
 
         // Pegamos cada número para pegar o valor dele no objeto Numeros
         for(var i = 0; i < numero.length; i++) {
-            numeroExtenso = Numeros[i][numeroArray[i]];
+
+            var extenso = Numeros[i][numeroArray[i]];
+
+            // Números de dez a dezenove
+            if (i == 0 && numeroArray[i+1] == '1') {
+                if (numeroArray[i+1] == '1') {
+                    extenso = Numeros[(i+1)]['1'][numeroArray[i]];
+                    i++;
+                }
+            }
+
+            numeroExtenso = extenso;
+
             result.push(numeroExtenso);
         }
 
