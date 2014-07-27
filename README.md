@@ -3,14 +3,14 @@ A intenção é escrever números em sua forma extensa via JavaScript, e escreve
 
 Ou seja:
 ```js
-var num = Numero(235);
+var num = Numbero(235);
 
 console.log(num);
 // Duzentos e Trinta e Cinco
 ```
 e o contrário também:
 ```js
-var num = Numero('Duzentos e Trinta e Cinco');
+var num = Numbero('Duzentos e Trinta e Cinco');
 
 console.log(num);
 // 235
